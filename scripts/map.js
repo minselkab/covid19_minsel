@@ -135,7 +135,7 @@ $(window).on('load', function() {
           ('Pelaku Perjalanan : ' + (point['Pelaku Perjalanan']))+'<br>'+
           ('Orang Tanpa Gejala : ' + (point['Orang Tanpa Gejala']))+'<br>'+
           ('Orang Dalam Pemantauan : ' + (point['Orang Dalam Pemantauan']))+'<br>'+
-          ('Pasien Dalam Pengawasan : ' + (point['Pasein Dalam Pengawasan'])));
+          ('Pasien Dalam Pengawasan : ' + (point['Pasien Dalam Pengawasan'])));
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
