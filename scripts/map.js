@@ -128,13 +128,13 @@ $(window).on('load', function() {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
           .bindPopup("<b>" + point['Kecamatan'] + '</b><br>' +
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          ('Terkontaminasi : ' + (point['Terkontaminasi']))+
-          ('Positif Dalam Perawatan : ' + (point['Dalam Perawatan']))+
-          ('Positif Sembuh : ' + (point['Sembuh']))+
-          ('Positif Meninggal : ' + (point['Meninggal']))+
-          ('Pelaku Perjalanan : ' + (point['Pelaku Perjalanan']))+
-          ('Orang Tanpa Gejala : ' + (point['Orang Tanpa Gejala']))+
-          ('Orang Dalam Pemantauan : ' + (point['Orang Dalam Pemantauan']))+
+          ('Terkontaminasi : ' + (point['Terkontaminasi']))+'<br>'+
+          ('Positif Dalam Perawatan : ' + (point['Dalam Perawatan']))+'<br>'+
+          ('Positif Sembuh : ' + (point['Sembuh']))+'<br>'+
+          ('Positif Meninggal : ' + (point['Meninggal']))+'<br>'+
+          ('Pelaku Perjalanan : ' + (point['Pelaku Perjalanan']))+'<br>'+
+          ('Orang Tanpa Gejala : ' + (point['Orang Tanpa Gejala']))+'<br>'+
+          ('Orang Dalam Pemantauan : ' + (point['Orang Dalam Pemantauan']))+'<br>'+
           ('Pasien Dalam Pengawasan : ' + (point['Pasein Dalam Pengawasan'])));
 
         if (layers !== undefined && layers.length !== 1) {
