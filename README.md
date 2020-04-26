@@ -4,7 +4,7 @@ Customize Leaflet maps with a linked Google Sheets template and GeoJSON data on 
 ![Preview](preview.jpg)
 
 ## Live links (replace with your own)
-- Leaflet Map https://minselkab.github.io/testing/.
+- Leaflet Map https://minselkab.github.io/covid19_minsel/
 - Google Sheets template https://docs.google.com/spreadsheets/d/1SlWkv9VKIZweo8aCcOBpvjsBNu8HyWd4X8Vf1OPztU8/edit#gid=0
 
 ## Create your own
