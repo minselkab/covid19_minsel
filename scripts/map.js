@@ -128,7 +128,7 @@ $(window).on('load', function() {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
           .bindPopup("<b>" + point['Kecamatan'] + '</b><br>' +
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          ('Terkontaminasi : ' + (point['Terkontaminasi']))+'<br>'+
+          ('Terkonfirmasi : ' + (point['Terkontaminasi']))+'<br>'+
           ('Positif Dalam Perawatan : ' + (point['Dalam Perawatan']))+'<br>'+
           ('Positif Sembuh : ' + (point['Sembuh']))+'<br>'+
           ('Positif Meninggal : ' + (point['Meninggal']))+'<br>'+
