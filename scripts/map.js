@@ -127,15 +127,8 @@ $(window).on('load', function() {
       if (point.Latitude !== '' && point.Longitude !== '') {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
           .bindPopup("<b>" + point['Kecamatan'] + '</b><br>' +
-          (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          ('Terkonfirmasi : ' + (point['Terkontaminasi']))+'<br>'+
-          ('Positif Dalam Perawatan : ' + (point['Dalam Perawatan']))+'<br>'+
-          ('Positif Sembuh : ' + (point['Sembuh']))+'<br>'+
-          ('Positif Meninggal : ' + (point['Meninggal']))+'<br>'+
-          ('Pelaku Perjalanan : ' + (point['Pelaku Perjalanan']))+'<br>'+
-          ('Orang Tanpa Gejala : ' + (point['Orang Tanpa Gejala']))+'<br>'+
-          ('Orang Dalam Pemantauan : ' + (point['Orang Dalam Pemantauan']))+'<br>'+
-          ('Pasien Dalam Pengawasan : ' + (point['Pasien Dalam Pengawasan'])));
+          (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') + 
+          ('STATUS : ' + (point['status'])));
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
